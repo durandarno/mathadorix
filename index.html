@@ -1,0 +1,92 @@
+<!--
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+	Name:Mathadorix
+
+	Author : Arnaud DURAND
+	mail : durand.arnaud@mathix.org
+	site : http://mathix.org
+	page : http://mathix.org/mathadorix
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHADORIX</title>
+<script defer language="JavaScript" src="fonctions.js"></script>	
+</head>
+
+<body>
+	Avec les points <input type="checkbox" id="avecsanspoints">
+	<div style="width:100%;">
+		
+		<div  style="display: inline-block;width:26%;vertical-align:middle;">
+
+			<svg  width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" >
+	
+	<g stroke="black">
+		<line x1="50" x2="50" y1="50" y2="5" stroke-width=".5" id="secondes" />
+
+	</g>
+	<g stroke="black" id="marques">
+		<circle cx="50" cy="50" r="3" stroke-width="1" fill="white" id="small"/>
+	</g>
+	
+</svg>
+			
+			<input style="display:none;" type="text" size="3" id="seca">
+		</div>
+		<div  style="width:26%;display: inline-block;"><div id="lespoints" class="texte" style="display:none;"><span>Points :<br/></span><input  type="text" value=0 size="3" id="points" readonly="readonly"/><span id="points"></span></div></div>
+		<div  style="width:26%;display: inline-block;"><div class="texte">Cible : 	<br/> <input type="text" size="3" id="cible" readonly="readonly"/>
+		</div> 
+	</div>
+	
+<div id="jeu">
+<table style="height:100px;  width: 100%; border='0'"  >
+  <tbody>
+    <tr>
+      <td ><div  id='plus'>+</div></td>
+      <td ><div id='moins' >-</div></td>
+      <td ><div id='fois' >x</div></td>
+      <td ><div id='diviser'>:</div></td>
+    </tr>
+	
+    <tr>
+		<td ><input size="3"  id='nb1' readonly="readonly"  /></td>
+		<td ><input size="3"  id='nb2' readonly="readonly" /></td>
+		<td ><input size="3"  id='nb3' readonly="readonly" /></td>
+		<td ><input size="3"  id='nb4' readonly="readonly" /></td>
+		<td ><input size="3"  id='nb5' readonly="readonly" /></td>
+    </tr>
+ </tbody>
+</table>	 																								    
+
+<div style="display:block;" class="texte" ><span >Opération en cours : </span><input type="text"  id="opencours" readonly="readonly" /></div>
+<div style="display:inline;width:100%;">
+<input id="annuler" style="float:left" class="bouton" type="button" value="Annuler" > 
+
+
+<input id="nouveaujeu" style="float:right" class="bouton" type="button" value="Nouveau jeu" >
+<div>Auteur : Arnaud Durand<br/>
+Licence GPL v3</div>
+</div>
+
+</div>
+</body>
+</html>
+
+
+
